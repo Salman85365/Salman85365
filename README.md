@@ -124,6 +124,8 @@ I believe this feedback loop is one of the key building blocks for reliable AI a
 
 One of my current experimental projects is an **AI-powered PiKVM automation agent**.
 
+https://github.com/Salman85365/Pikvm-work-agent
+
 The goal is to allow an AI system running locally to operate a remote computer through an existing PiKVM connection without installing an agent or custom software on the remote machine.
 
 The architecture looks roughly like this:
