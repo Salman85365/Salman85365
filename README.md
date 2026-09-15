@@ -1,384 +1,55 @@
-# Hi, I'm Salman Arif 👋
-
-### Senior Full Stack Software Engineer | Python • Django • FastAPI • AI/LLM Systems
+# Hi, I'm Salman Arif
 
-I'm a software engineer focused on building production-grade backend systems, APIs, SaaS platforms, automation tools, and AI-powered applications.
+**Senior Full Stack Software Engineer · Python backends, background jobs & AI automation**
 
-My strongest area is **Python backend engineering**, particularly with **Django, Django REST Framework, FastAPI, PostgreSQL, Celery, Redis, Docker, and AWS**.
+I build APIs, SaaS backends, and automation tools with Python, Django, FastAPI, and PostgreSQL. My current open-source work focuses on understanding failed background jobs and building agents that verify the results of their actions.
 
-More recently, I've been working with and exploring **LLM integrations, AI agents, computer-use automation, multimodal AI, and developer tools powered by AI**.
-
----
-
-## 👨‍💻 About Me
-
-- 💼 Senior Full Stack Software Engineer
-- 🐍 Primarily focused on Python backend development
-- ⚙️ Experienced with production APIs, SaaS systems, distributed workloads, and automation
-- 🤖 Exploring AI agents, LLM integrations, vision-based automation, and tool use
-- ☁️ Experienced with AWS, Azure, Docker, CI/CD, and cloud-based systems
-- 🧠 Interested in building AI systems that can reason, use tools, and interact with real environments
-- 🌍 Based in Pakistan and working with international teams and clients
+## Start here: QueueLoom
 
----
+**See what happened to a background job, from queue to failure or success.**
 
-## 🛠️ Tech Stack
+[**Try the local demo →**](https://github.com/Salman85365/queueloom#try-the-demo) · [Source code](https://github.com/Salman85365/queueloom) · [Tests](https://github.com/Salman85365/queueloom/tree/main/tests)
 
-### Backend
+QueueLoom records task timelines, queue latency, retries, and exceptions, with a dashboard for investigating failures. The main focus is Celery; adapters for other Python task frameworks are included.
 
-- Python
-- Django
-- Django REST Framework
-- FastAPI
-- Flask
-- Wagtail
-- REST APIs
-- WebSockets
-- Server-Sent Events (SSE)
+- **Explore:** task lifecycle tracking, event ingestion, failure-rate alerts, and incident summaries.
+- **Try it:** the local demo runs sample jobs using SQLite and an in-memory Celery broker.
+- **Status:** pre-alpha, under active development.
 
-### Databases & Data
+## More projects
 
-- PostgreSQL
-- MySQL
-- MongoDB
-- Redis
-- Pandas
-- NumPy
+### [OpsMender](https://github.com/Salman85365/opsmender)
 
-### Async & Messaging
+Diagnose a broken Docker Compose stack, propose a recovery plan, and verify the result after approved actions.
 
-- Celery
-- RabbitMQ
-- Redis
-- Background workers
-- Event-driven systems
+- **Explore:** evidence collection, deterministic diagnosis, an optional LLM reasoner, and bounded recovery actions.
+- **Try it:** [five bundled failure scenarios](https://github.com/Salman85365/opsmender/tree/main/demo).
+- **Status:** pre-release. [Tests](https://github.com/Salman85365/opsmender/tree/main/tests) and validation notes are in the repository.
 
-### Cloud & Infrastructure
+### [PiKVM Work Agent](https://github.com/Salman85365/Pikvm-work-agent)
 
-- AWS EC2
-- AWS S3
-- Azure
-- Docker
-- Linux
-- Nginx
-- CI/CD
-- Jenkins
+A local Python agent that observes and operates a remote computer through PiKVM, without installing software on the remote machine.
 
-### AI & LLM
+- **Explore:** screenshot perception, keyboard/mouse actions, local policy checks, and visual verification.
+- **Status:** experimental; the README separates hardware-validated milestones from workflows still awaiting validation.
+- [Architecture and usage](https://github.com/Salman85365/Pikvm-work-agent#readme) · [Tests](https://github.com/Salman85365/Pikvm-work-agent/tree/main/tests)
 
-- OpenAI API
-- LLM integrations
-- AI agents
-- Multimodal / vision workflows
-- Tool calling
-- Prompt engineering
-- Context engineering
-- Local LLM experimentation
-- Ollama
-- AI workflow automation
+## Engineering background
 
-### Frontend
+My professional experience includes Django applications, REST APIs, permissions and business workflows, asynchronous processing, cloud deployments, and LLM-assisted data processing.
 
-- Vue.js
-- Quasar Framework
-- Tailwind CSS
-- JavaScript
-- HTML / CSS
+| Area | Tools I work with |
+| --- | --- |
+| Backend | Python, Django, Django REST Framework, FastAPI |
+| Data & jobs | PostgreSQL, Redis, Celery, RabbitMQ |
+| Infrastructure | Docker, Linux, AWS, Azure, CI/CD |
+| Frontend | Vue.js, Quasar, Tailwind CSS |
+| Quality & AI | Pytest, Ruff, LLM integrations, tool use, multimodal workflows |
 
-### Development Tools
+## Current focus
 
-- Git
-- GitHub
-- GitLab
-- Azure DevOps
-- Pytest
-- Ruff
-- Jira
-- VS Code
-- PyCharm
-
----
+Making QueueLoom easier to try, testing failure and retry behavior, and improving the reliability of automation through an **observe → reason → act → verify** loop.
 
-## 🤖 AI & Agent Development
+I'm interested in collaborating on Python developer tools, backend systems, and practical AI automation.
 
-I'm particularly interested in moving beyond traditional chatbot-style AI applications toward systems that can:
-
-1. Observe an environment
-2. Understand the current state
-3. Reason about the next action
-4. Use tools to perform that action
-5. Verify the result
-6. Recover safely when something unexpected happens
-
-A pattern I frequently explore is:
-
-```text
-OBSERVE → REASON → ACT → VERIFY
-```
-
-I believe this feedback loop is one of the key building blocks for reliable AI agents.
-
----
-
-## 🖥️ PiKVM AI Agent
-
-One of my current experimental projects is an **AI-powered PiKVM automation agent**.
-
-https://github.com/Salman85365/Pikvm-work-agent
-
-The goal is to allow an AI system running locally to operate a remote computer through an existing PiKVM connection without installing an agent or custom software on the remote machine.
-
-The architecture looks roughly like this:
-
-```text
-Local Python Agent
-        ↓
-PiKVM Screenshot
-        ↓
-Vision / LLM Reasoning
-        ↓
-Determine Next Action
-        ↓
-PiKVM Keyboard / Mouse HID
-        ↓
-Remote Computer
-        ↓
-Capture New Screenshot
-        ↓
-Verify Result
-        ↓
-Repeat
-```
-
-The system follows a strict:
-
-```text
-OBSERVE → REASON → ACT → VERIFY
-```
-
-workflow.
-
-The project explores areas such as:
-
-- Computer-use agents
-- Multimodal reasoning
-- Vision-based automation
-- Remote computer interaction
-- Tool-using AI
-- Safe agent execution
-- Human-in-the-loop authentication
-- Failure detection and recovery
-
-The remote machine remains agentless and receives only normal keyboard and mouse input through PiKVM.
-
----
-
-## 🚀 Professional Experience
-
-I've worked on production software involving:
-
-- Large Django applications
-- Django REST Framework APIs
-- FastAPI services
-- SaaS platforms
-- Enterprise backend systems
-- PostgreSQL-based applications
-- Async processing with Celery
-- Redis-backed systems
-- RabbitMQ messaging
-- Dockerized services
-- AWS infrastructure
-- Azure services
-- CI/CD pipelines
-- Data-processing workflows
-- AI and LLM integrations
-- Enterprise automation
-
----
-
-## 🔧 Some Problems I've Worked On
-
-### API & Backend Architecture
-
-Building and maintaining backend systems with:
-
-```text
-Python
-Django
-FastAPI
-PostgreSQL
-Redis
-Celery
-Docker
-AWS
-```
-
-including authentication, permissions, background jobs, data processing, APIs, and integrations.
-
-### AI-Powered Data Processing
-
-Worked with workflows where LLMs are integrated into backend services for tasks such as:
-
-- Classification
-- Sentiment analysis
-- Topic extraction
-- Structured data enrichment
-- Automated processing pipelines
-
-### Async & Event-Driven Systems
-
-Experience debugging and working with systems involving:
-
-```text
-Application
-    ↓
-Publisher
-    ↓
-RabbitMQ
-    ↓
-Consumer
-    ↓
-Async Processing
-```
-
-as well as Celery/Redis-based background processing.
-
-### Enterprise Application Development
-
-Worked on systems involving:
-
-- Complex permissions
-- Role-based access
-- Business validation rules
-- Workflow management
-- Document relationships
-- Revision/versioning logic
-- Large existing codebases
-- Automated testing
-
----
-
-## 🧪 Engineering Approach
-
-I care about building systems that are:
-
-- Reliable
-- Observable
-- Maintainable
-- Testable
-- Secure
-- Easy to reason about
-
-For AI systems in particular, I prefer architectures where actions are **verified rather than assumed to have succeeded**.
-
-For example:
-
-```python
-observe()
-reason()
-act()
-verify()
-```
-
-rather than:
-
-```python
-act()
-assume_success()
-```
-
----
-
-## 🧠 What I'm Currently Exploring
-
-I'm actively exploring:
-
-- AI agents
-- Claude
-- OpenAI
-- Gemini
-- Computer-use agents
-- MCP
-- Tool calling
-- Multimodal models
-- AI coding assistants
-- Local LLMs
-- Agent orchestration
-- Vision-based automation
-- AI developer tools
-- Human-in-the-loop systems
-
----
-
-## 💡 Areas I'm Especially Interested In
-
-```text
-AI Agents
-Backend Engineering
-Developer Tools
-Automation
-Computer Vision
-LLM Applications
-SaaS
-Distributed Systems
-Cloud Infrastructure
-```
-
-I'm especially interested in the intersection of:
-
-**Software Engineering + AI + Automation**
-
----
-
-## 🌱 Current Learning Direction
-
-My current focus is understanding how modern AI models can move from simply generating text to reliably interacting with:
-
-- APIs
-- Software tools
-- Browsers
-- Computers
-- Development environments
-- Business workflows
-- External systems
-
-while keeping humans in control of important decisions.
-
----
-
-## 🤝 Open to Collaboration
-
-I'm interested in collaborating on projects involving:
-
-- Python
-- Django
-- FastAPI
-- AI / LLM applications
-- AI agents
-- Developer tooling
-- Backend platforms
-- SaaS products
-- Automation
-- Open-source AI experiments
-
----
-
-## 📫 Connect With Me
-
-### GitHub
-
-[github.com/Salman85365](https://github.com/Salman85365)
-
-### LinkedIn
-
-https://www.linkedin.com/in/salman-arif-backend/
-
-### Upwork
-
-[Add your Upwork profile URL here.](https://www.upwork.com/freelancers/~01ca6d26d92f5d5a1b)
-
----
-
-## ⚡ Philosophy
-
-> Build AI that doesn't just generate an answer — build systems that observe, reason, act, verify, and improve.
+[LinkedIn](https://www.linkedin.com/in/salman-arif-backend/) · [Upwork](https://www.upwork.com/freelancers/~01ca6d26d92f5d5a1b)
