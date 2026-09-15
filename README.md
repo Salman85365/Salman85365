@@ -8,13 +8,14 @@ I build APIs, SaaS backends, and automation tools with Python, Django, FastAPI, 
 
 **See what happened to a background job, from queue to failure or success.**
 
-[**Try the local demo →**](https://github.com/Salman85365/queueloom#try-the-demo) · [Source code](https://github.com/Salman85365/queueloom) · [Tests](https://github.com/Salman85365/queueloom/tree/main/tests)
+[**Try the local demo →**](https://github.com/Salman85365/queueloom#try-the-demo) · [Download alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a1) · [Benchmark](https://github.com/Salman85365/queueloom/blob/v0.1.0a1/docs/BENCHMARK.md) · [Source code](https://github.com/Salman85365/queueloom)
 
 QueueLoom records task timelines, queue latency, retries, and exceptions, with a dashboard for investigating failures. The main focus is Celery; adapters for other Python task frameworks are included.
 
 - **Explore:** task lifecycle tracking, event ingestion, failure-rate alerts, and incident summaries.
 - **Try it:** the local demo runs sample jobs using SQLite and an in-memory Celery broker.
-- **Status:** pre-alpha, under active development.
+- **Status:** [v0.1.0a1 alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a1), for evaluation and feedback.
+- **Evidence:** [passing checks](https://github.com/Salman85365/queueloom/actions/runs/35003246850), verified package installation, and a reproducible transport benchmark with raw results.
 
 ## More projects
 
