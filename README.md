@@ -8,15 +8,19 @@ I build APIs, SaaS backends, and automation tools with Python, Django, FastAPI, 
 
 **See what happened to a background job, from queue to failure or success.**
 
-[**Try the local demo →**](https://github.com/Salman85365/queueloom#try-the-demo) · [Walkthrough](https://github.com/Salman85365/queueloom/blob/main/docs/WALKTHROUGH.md) · [Download alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a1) · [Benchmark](https://github.com/Salman85365/queueloom/blob/v0.1.0a1/docs/BENCHMARK.md) · [Source code](https://github.com/Salman85365/queueloom)
+[**Watch the 55-second demo →**](https://github.com/Salman85365/queueloom/releases/download/v0.1.0a2/queueloom-demo.mp4) · [**Try the local demo**](https://github.com/Salman85365/queueloom#try-the-demo) · [Walkthrough](https://github.com/Salman85365/queueloom/blob/main/docs/WALKTHROUGH.md) · [Download alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a2) · [Benchmark](https://github.com/Salman85365/queueloom/blob/v0.1.0a1/docs/BENCHMARK.md) · [Source code](https://github.com/Salman85365/queueloom)
+
+[![Watch QueueLoom: failure, recovered retry and diagnosis](https://github.com/Salman85365/queueloom/releases/download/v0.1.0a2/queueloom-demo-poster.png)](https://github.com/Salman85365/queueloom/releases/download/v0.1.0a2/queueloom-demo.mp4)
+
+*55-second captioned walkthrough from real local dashboard captures; synthetic jobs and local template diagnosis.*
 
 QueueLoom records task timelines, queue latency, retries, and exceptions, with a dashboard for investigating failures. The main focus is Celery; adapters for other Python task frameworks are included.
 
 - **Explore:** task lifecycle tracking, event ingestion, failure-rate alerts, and incident summaries.
 - **Try it:** the local demo runs sample jobs using SQLite and an in-memory Celery broker. Follow a failure, recovered retry, and slow job in the [guided walkthrough](https://github.com/Salman85365/queueloom/blob/main/docs/WALKTHROUGH.md).
 - **Help shape it:** [try the ten-minute evaluation](https://github.com/Salman85365/queueloom/blob/main/docs/FEEDBACK.md) and report one confusing step or missing detail.
-- **Status:** [v0.1.0a1 alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a1), for evaluation and feedback.
-- **Evidence:** [passing checks](https://github.com/Salman85365/queueloom/actions/runs/35019039288), verified package installation, and a reproducible transport benchmark with raw results.
+- **Status:** [v0.1.0a2 alpha](https://github.com/Salman85365/queueloom/releases/tag/v0.1.0a2), for evaluation and feedback.
+- **Evidence:** [passing checks](https://github.com/Salman85365/queueloom/actions/runs/35040311970), verified package installation, and a reproducible transport benchmark with raw results.
 
 ## More projects
 
